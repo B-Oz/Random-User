@@ -1,0 +1,40 @@
+@import './scss/reset', './scss/variables';
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500&display=swap');
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  background-color: var(--color2);
+}
+
+.App {
+  text-align: center;
+  width: 500px;
+  height: 400px;
+  background-image: radial-gradient(circle, var(--color2), var(--color5));
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  border-radius: 10px;
+  box-shadow: 3px 3px 3px -2px var(--color1), 5px 10px 5px -4px var(--color5),15px 20px 6px -8px var(--color4);/* mark the inset */
+  
+}
+
+.button {
+  padding: 0.5rem;
+  margin: 2rem auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color4);
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-family: 'Roboto Mono', monospace;
+  cursor: pointer;
+}
+.button:active {
+  transform: scale(0.98);
+  /* Scaling button to 0.98 to its original size */
+  box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+  /* Lowering the shadow */}
